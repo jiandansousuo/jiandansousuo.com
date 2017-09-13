@@ -4,8 +4,8 @@ menu:
     GitHub: https://github.com/jiandansousuo/jiandansousuo.com
     Rss: /atom.xml
 
-favicon: /favicon.png
-logo: /favicon.png
+favicon: /favicon.ico
+logo: /img/logo.png
 
 # Comment
 # e.g disqus: seansun
