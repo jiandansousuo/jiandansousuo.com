@@ -1,0 +1,11 @@
+prev: PREV
+next: NEXT
+prev_post: PREV
+next_post: NEXT
+more: ...more
+
+menu:
+  Home: Home
+  Archive: Archive
+  GitHub: GitHub
+  Rss: RSS
