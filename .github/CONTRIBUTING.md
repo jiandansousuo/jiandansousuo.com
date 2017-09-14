@@ -38,6 +38,7 @@ desc: '文章描述'
 ---
 ```
 
+- 在文章内合适的位置添加`<!--more-->`, 以方便生成 [文章摘要](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md#文章摘要)
 - PR 前请确认运行`hexo generate`命令正常
 
 ## 后记
