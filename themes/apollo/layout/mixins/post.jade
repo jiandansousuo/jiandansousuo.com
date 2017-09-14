@@ -28,7 +28,7 @@ mixin postList()
             - var itemYear = date(item.date, 'YYYY') - 0;
             - change = year !== itemYear;
             - year = change ? itemYear : year;
-            if change 
+            if change
                 h2.archive-year!= year
             .post-item
                 +postInfo(item)
@@ -42,6 +42,8 @@ mixin post(item)
         article.post-block
             h1.post-title
                 != item.title
+                //- Github edit path @yugasun
+                a.post-edit-link(href= url_for(theme.gitedit + page.source) target="_blank") 编辑此页
             +postInfo(item)
             .post-content
                 != item.content
