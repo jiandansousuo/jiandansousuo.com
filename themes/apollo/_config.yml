@@ -1,6 +1,7 @@
 menu:
     Home: /
     Archive: /archives/
+    About: /post/about.html
     GitHub: https://github.com/jiandansousuo/jiandansousuo.com
     Rss: /atom.xml
 
