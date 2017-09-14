@@ -21,4 +21,8 @@ ga: false
 startyear: 2017
 
 # Github edit path @yugasun
-gitedit: https://github.com/jiandansousuo/jiandansousuo.com/edit/master/source/
+github_edit:
+  url: https://github.com/jiandansousuo/jiandansousuo.com/edit/
+  branch: master
+  path: /source/
+

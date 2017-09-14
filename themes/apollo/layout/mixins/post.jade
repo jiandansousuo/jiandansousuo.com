@@ -2,7 +2,10 @@ mixin postInfo(item)
     .post-info
         != full_date(item.date, 'll')
         if item.from && (is_home() || is_post())
-            a.post-from(href=item.from target="_blank" title=item.from) 翻译 · 原文地址
+            a.post-from(href=item.from target="_blank" title=item.from) 转载 · 原文地址
+        //- Github edit button @yugasun
+        if  is_post()
+            a.post-edit-link(href= url_for(theme.github_edit.url + theme.github_edit.branch + theme.github_edit.path + page.source) target="_blank") 编辑此页
 
 //- Index Page
 mixin posts()
@@ -42,8 +45,6 @@ mixin post(item)
         article.post-block
             h1.post-title
                 != item.title
-                //- Github edit path @yugasun
-                a.post-edit-link(href= url_for(theme.gitedit + page.source) target="_blank") 编辑此页
             +postInfo(item)
             .post-content
                 != item.content
