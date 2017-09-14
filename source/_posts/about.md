@@ -31,7 +31,7 @@ desc: '主要是了解到有这么个App, 再加上对她非常喜欢, 就注册
 <a id="submission"></a>
 ## 投稿
 
-您有任何搜索相关的idea都可以通过 [创建issue](https://github.com/jiandansousuo/jiandansousuo.com/issues/new?title=idea:) 告诉我们, 也可以直接 [发起pull request](.) , 我们将及时的回复您.
+您有任何搜索相关的idea都可以通过 [创建issue](https://github.com/jiandansousuo/jiandansousuo.com/issues/new?title=idea:) 告诉我们, 也可以直接 [发起pull request](https://github.com/jiandansousuo/jiandansousuo.com/compare) , 我们将及时的回复您.
 
 开源力量是神圣的, 我们期待您的参与, 更多请阅读 [用户贡献指南](https://github.com/jiandansousuo/jiandansousuo.com/blob/master/.github/CONTRIBUTING.md)!
 
