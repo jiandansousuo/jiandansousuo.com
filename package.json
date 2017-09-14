@@ -5,7 +5,8 @@
     "version": "3.3.9"
   },
   "scripts": {
-    "build": "hexo generate"
+    "build": "hexo generate",
+    "postinstall": "./bin/post-install.sh"
   },
   "devDependencies": {
     "hexo": "^3.3.9",
