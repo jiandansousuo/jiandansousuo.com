@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "hexo generate",
+    "theme.update": "./bin/post-install.sh",
     "postinstall": "./bin/post-install.sh"
   },
   "devDependencies": {
