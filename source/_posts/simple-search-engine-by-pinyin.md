@@ -1,6 +1,8 @@
 ---
 title: 简单拼音搜索引擎
+desc: 这是一款简单高效的拼音匹配引擎，它能使用拼音够快速的检索列表中的数据
 date: 2017-09-19 15:44:24
+author: yugasun
 tags:
   - Search Engine
   - Javascript
