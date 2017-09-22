@@ -1,5 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-desc: desc
+desc: '文章描述'
+author: 'Github ID'
 ---
