@@ -7,7 +7,8 @@
   "scripts": {
     "build": "hexo generate",
     "theme.update": "./bin/post-install.sh",
-    "postinstall": "./bin/post-install.sh"
+    "postinstall": "./bin/post-install.sh",
+    "server": "hexo server"
   },
   "devDependencies": {
     "hexo": "^3.3.9",
