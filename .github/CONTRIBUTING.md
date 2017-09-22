@@ -35,6 +35,7 @@ good:
 title: '标题'
 date: '时间'
 desc: '文章描述'
+author: 'Github ID'
 ---
 ```
 
