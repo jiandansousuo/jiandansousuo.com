@@ -9,13 +9,17 @@ const jsonPath = path.resolve(__dirname, '../public/content.json');
 
 let isError = false;
 
-const exit = str => {
+const exit = (str, isExit) => {
   isError = true;
   console.error(str);
+
+  if (isExit) {
+    process.exit(1);
+  }
 };
 
 if (!fs.existsSync(jsonPath)) {
-  exit(`\`${jsonPath}\` is not a file!`);
+  exit(`\`${jsonPath}\` is not a file!`, true);
 }
 
 let data;
@@ -31,17 +35,19 @@ catch (e) {
 if (!data.meta) {
   exit('`config.meta` can not be empty!');
 }
-[
-  'title',
-  'subtitle',
-  'description',
-  'author',
-  'url'
-].forEach(key => {
-  if (!data.meta[key]) {
-    exit(`\`config.${key}\` can not be empty!`);
-  }
-});
+else {
+  [
+    'title',
+    'subtitle',
+    'description',
+    'author',
+    'url'
+  ].forEach(key => {
+    if (!data.meta[key]) {
+      exit(`\`config.${key}\` can not be empty!`);
+    }
+  });
+}
 
 
 [
