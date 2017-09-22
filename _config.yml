@@ -98,3 +98,25 @@ search:
   field: post
   format: html
   limit: 10000
+
+jsonContent:
+  meta: true
+  keywords: false # language name option
+  posts:
+    title: true
+    slug: true
+    date: true
+    updated: true
+    comments: true
+    path: true
+    link: true
+    permalink: true
+    excerpt: true
+    keywords: true # but only if root keywords option language was set
+    text: true
+    raw: false
+    content: false
+    categories: true
+    tags: true
+    author: true
+    desc: true
