@@ -85,14 +85,6 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: apollo
 
-# Deployment
-## Docs: https://hexo.io/docs/deployment.html
-deploy:
-- type: git
-  repo: https://github.com/jiandansousuo/jiandansousuo,com.git
-  branch: master
-
-
 search:
   path: search.xml
   field: post
