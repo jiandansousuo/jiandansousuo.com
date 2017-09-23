@@ -8,16 +8,14 @@ tags:
   - Javascript
 ---
 
-本文主要是通过分析[pinyin-engine](https://github.com/aui/pinyin-engine)源码，一步步基于Javascript实现一个拼音搜索引擎，全部源码（包括注释）都发布在Github上：[demo-pinyin-engine](https://github.com/jiandansousuo/demo-pinyin-engine)
-
-[在线Demo](https://demo.jiandansousuo.com/pinyin-engine/example/)
+本文主要是通过分析 [pinyin-engine](https://github.com/aui/pinyin-engine) 源码，一步步基于Javascript实现一个拼音搜索引擎，全部源码（包括注释）都发布在Github上： [demo-pinyin-engine](https://github.com/jiandansousuo/demo-pinyin-engine) ， [在线Demo](https://demo.jiandansousuo.com/pinyin-engine/example/)
 
 本文主要分为两部分：
 
 1. 实现简单的搜索文字匹配
 2. 结合汉字拼音字典实现拼音搜索引擎
 
-PS: 本文均基于ES6语法实现，考虑到兼容性，通过 [webpack](https://webpack.js.org/)工具 来进行编译输出ES5语法。
+PS: 本文均基于ES6语法实现，考虑到兼容性，通过 [webpack](https://webpack.js.org/) 工具 来进行编译输出ES5语法。
 
 <!--more-->
 
@@ -142,7 +140,7 @@ $input.oninput = $input.onpropertychange = function () {
 
 ### 创建中文分词方法
 
-在构建搜索引擎的时候，我们需要根据需要查询的属性数组`props`，获取数据集`data`中对应属性的值 - `中文字符串`，然后对中文字符创进行分词，也就是循环遍历中文字符串，通过 `拼音字典` 找到每个中文所对应的 `拼音`，然后拼接出所有拼音组合的可能性，便于我们搜索，于是给 `PinyinEngine` 添加 `participle` 私有方法：
+在构建搜索引擎的时候，我们需要根据需要查询的属性数组 `props` ，获取数据集 `data` 中对应属性的值 - `中文字符串`，然后对中文字符创进行分词，也就是循环遍历中文字符串，通过 `拼音字典` 找到每个中文所对应的 `拼音` ，然后拼接出所有拼音组合的可能性，便于我们搜索，于是给 `PinyinEngine` 添加 `participle` 私有方法：
 
 ```js
 /**
@@ -281,7 +279,7 @@ query (keyword) {
 * `indexs` 存放上一次搜索的索引
 * `data` 存放上一次的搜索结果
 
-修改 `constructor`：
+修改 `constructor` ：
 
 ```js
 constructor (data, indexs = [], dict = {}) {
@@ -333,4 +331,4 @@ query (keyword) {
 
 ## 总结
 
-本篇就到这里结束了，再次感谢 [@糖饼](https://github.com/aui) 大神提供的 [pinyin-engine](https://github.com/aui/pinyin-engine) 库，才有了这篇文章。当然，本文只提供了中文字典，感兴趣的可以添加不同语言的字典，来扩展为各国语言的搜索引擎，[pinyin-engine](https://github.com/aui/pinyin-engine)这个库，就是扩展了繁体的拼音搜索，感兴趣的可以去研究研究。
+本篇就到这里结束了，再次感谢 [@糖饼](https://github.com/aui) 大神提供的 [pinyin-engine](https://github.com/aui/pinyin-engine) 库，才有了这篇文章。当然，本文只提供了中文字典，感兴趣的可以添加不同语言的字典，来扩展为各国语言的搜索引擎， [pinyin-engine](https://github.com/aui/pinyin-engine) 这个库，就是扩展了繁体的拼音搜索，感兴趣的可以去研究研究。
