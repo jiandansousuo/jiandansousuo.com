@@ -5,5 +5,5 @@ sudo: false
 cache:
   directories:
     - node_modules
-script: npm run check
+script: npm test
 after_script: rm -rf public
