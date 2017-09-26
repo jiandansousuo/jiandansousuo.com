@@ -9,14 +9,16 @@
 
 ## 如何提交代码？
 
-1. Fork [@jiandansousuo/jiandansousuo.com](https://github.com/jiandansousuo/jiandansousuo.com)
-2. 本地安装 Hexo ，可参考: <https://hexo.io/docs/index.html#Installation>
-3. 修改文章或者创建新文章
+1. Fork [@jiandansousuo/jiandansousuo.com](https://github.com/jiandansousuo/jiandansousuo.com) 并下载到本地
+3. 运行 `npm install` 安装依赖
+3. 修改文章或者创建新文章，可参考: <https://hexo.io/zh-cn/docs/writing.html>
+4. 运行 `npm test` 确定没有错误信息
 4. [提交 PR](https://github.com/jiandansousuo/jiandansousuo.com/compare)
 
 ### 提交代码需知
 
 - 使用 [Markdown](http://wowubuntu.com/markdown/) 编写文档
+- 文档内使用**中文标点符号**
 - 我们提倡引用文本添加来源链接，如:
 
 ```markdown
@@ -40,7 +42,7 @@ author: 'Github ID'
 ```
 
 - 在文章内合适的位置添加 `<!--more-->` ，以方便生成 [文章摘要](https://github.com/pinggod/hexo-theme-apollo/blob/master/doc%2Fdoc-zh.md#文章摘要)
-- PR 前请确认运行 `npm run build` 命令正常
+- PR 前请确认运行 `npm run test` 命令正常
 
 ## 后记
 
