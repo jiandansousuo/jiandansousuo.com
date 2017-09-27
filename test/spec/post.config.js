@@ -6,7 +6,7 @@
 const expect = require('chai').expect;
 const posts = require('../getJSON')().posts;
 
-describe('check post', () => {
+describe('check post config', () => {
   posts.forEach(post => {
     describe(`check in ${post.path}`, () => {
       it(`post.title`, () => {
