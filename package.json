@@ -6,7 +6,7 @@
   },
   "scripts": {
     "build": "hexo generate",
-    "build:mip": "sh ./bin/build-mip.sh",
+    "build:mip": "npm install --save-dev hexo-generator-mip && npm run build -- --config mip.yml generate && npm uninstall --save-dev hexo-generator-mip",
     "theme.update": "./bin/post-install.sh",
     "postinstall": "./bin/post-install.sh",
     "server": "hexo server",

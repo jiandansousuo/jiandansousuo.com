@@ -10,7 +10,7 @@ const public = path.resolve(__dirname, '../mip_public/');
 
 module.exports = () => {
   if (!fs.existsSync(public)) {
-    console.error(`\`${jsonPath}\` is not a directory!`);
+    console.error(`\`${public}\` is not a directory!`);
     process.exit(1);
   }
 
