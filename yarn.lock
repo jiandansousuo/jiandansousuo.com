@@ -485,6 +485,12 @@ clean-css@^3.1.9, clean-css@^3.3.0:
     commander "2.8.x"
     source-map "0.4.x"
 
+clean-css@^4.1.9:
+  version "4.1.9"
+  resolved "http://registry.npm.taobao.org/clean-css/download/clean-css-4.1.9.tgz#35cee8ae7687a49b98034f70de00c4edd3826301"
+  dependencies:
+    source-map "0.5.x"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/cliui/download/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -993,7 +999,7 @@ express@2.5.x:
     mkdirp "0.3.0"
     qs "0.4.x"
 
-extend@~3.0.0, extend@~3.0.1:
+extend@^3.0.1, extend@~3.0.0, extend@~3.0.1:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/extend/download/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
 
@@ -1397,6 +1403,14 @@ hexo-generator-json-content@^3.0.1:
     hexo-util latest
     keyword-extractor latest
     moment latest
+
+hexo-generator-mip@^0.3.2:
+  version "0.3.2"
+  resolved "http://registry.npm.taobao.org/hexo-generator-mip/download/hexo-generator-mip-0.3.2.tgz#7e814ecf4b0a8181cdcbd46da926d5c2d921383f"
+  dependencies:
+    clean-css "^4.1.9"
+    extend "^3.0.1"
+    glob "^7.1.2"
 
 hexo-generator-sitemap@^1.2.0:
   version "1.2.0"
@@ -3023,7 +3037,7 @@ source-map@0.4.x:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@~0.5.1, source-map@~0.5.6:
+source-map@0.5.x, source-map@~0.5.1, source-map@~0.5.6:
   version "0.5.7"
   resolved "http://registry.npm.taobao.org/source-map/download/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
