@@ -6,14 +6,16 @@
   },
   "scripts": {
     "build": "hexo generate",
+    "build:mip": "hexo generate --config mip.yml generate",
     "theme.update": "./bin/post-install.sh",
     "postinstall": "./bin/post-install.sh",
     "server": "hexo server",
-    "pretest": "npm run build",
+    "pretest": "yarn run build && yarn run build:mip",
     "test": "mocha --reporter spec --timeout 5000 --recursive test/spec/"
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "glob": "^7.1.2",
     "hexo": "^3.3.9",
     "hexo-browsersync": "^0.2.0",
     "hexo-generator-archive": "^0.1.4",
@@ -21,6 +23,7 @@
     "hexo-generator-feed": "^1.2.2",
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-json-content": "^3.0.1",
+    "hexo-generator-mip": "^0.3.2",
     "hexo-generator-sitemap": "^1.2.0",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^0.3.0",
@@ -28,6 +31,7 @@
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
+    "mip-validator": "^1.5.6",
     "mocha": "^3.5.3"
   },
   "description": "jiandansousuo blog",
