@@ -27,7 +27,7 @@ author: jiandansousuo
 - 网站文章主仓库 - [@jiandansousuo/jiandansousuo.com](https://github.com/jiandansousuo/jiandansousuo.com)
 - 网站服务nginx配置 - [@jiandansousuo/nginx-conf](https://github.com/jiandansousuo/nginx-conf)
 - 各种demo例子 - [@jiandansousuo/demo-*](https://github.com/jiandansousuo?utf8=%E2%9C%93&q=demo&type=&language=)
-- 基于 [jenkins](https://jenkins.io) 的 [上线部署服务](https://ci.xuexb.com/view/%E7%AE%80%E5%8D%95%E6%90%9C%E7%B4%A2/)
+- 基于 [jenkins](https://jenkins.io) 的 [上线部署服务](https://jenkins.shangxian.app/job/docker-jiandansousuo.com/)
 
 <a id="submission"></a>
 
